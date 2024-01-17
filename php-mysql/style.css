@@ -1,3 +1,9 @@
+
+form{
+    width: 60%;
+    margin:5% 100% auto 25%;
+}
+
 form label {
     display: inline-block;
     width: 225px;
