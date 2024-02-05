@@ -16,6 +16,8 @@
             $other = $_POST['other'];
             $email = $_POST['email'];
 
+            //confirmation text
+
             echo 'Thanks for submitting the form.<br/>';
             echo 'You were abducted ' . $when_it_happened;
             echo ' and were gone for ' . $how_long . '<br/>';
@@ -25,6 +27,14 @@
             echo 'Was Fang there? ' . $fang_spotted . '<br/>';
             echo 'Other comments: ' . $other . '<br/>';
             echo 'Your email address is: ' .  $email;
+
+            //email message
+
+            $msg = "$name was abducted $when_it_happened and was gone for $how_long . \n" . 
+            "Number of aliens: $how_many \n" .
+            "What they did: $what_they_did \n" .
+            "Fang_spotted: $fang_spotted \n" . 
+            "Other comments: $other";
 
         ?>
     </body>
